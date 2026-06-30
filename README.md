@@ -10,7 +10,9 @@ A clean custom WordPress theme for a premium travel and hospitality website.
 - `header.php`
 - `footer.php`
 - `front-page.php`
+- `home.php`
 - `page.php`
+- `template-parts/travel-home.php`
 - `assets/js/navigation.js`
 
 ## Deployment with WP Pusher
