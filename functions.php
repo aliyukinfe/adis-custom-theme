@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'ADIS_CUSTOM_THEME_VERSION', '1.0.0' );
+define( 'ADIS_CUSTOM_THEME_VERSION', '1.1.0' );
 
 if ( ! function_exists( 'adis_custom_theme_setup' ) ) {
 	/**

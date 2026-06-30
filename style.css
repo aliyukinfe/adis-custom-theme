@@ -1,28 +1,28 @@
 /*
-Theme Name: Adis Custom Theme
+Theme Name: Adis Travel Theme
 Theme URI: https://example.com/adis-custom-theme
 Author: Adis
 Author URI: https://example.com
-Description: A clean, modern, responsive WordPress business theme built for performance, accessibility, SEO, and WP Pusher deployment.
-Version: 1.0.0
+Description: A clean, modern, responsive WordPress travel and hospitality theme built for performance, accessibility, SEO, and WP Pusher deployment.
+Version: 1.1.0
 Requires at least: 6.0
 Tested up to: 6.6
 Requires PHP: 7.4
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: adis-custom-theme
-Tags: custom-logo, custom-menu, featured-images, responsive-layout, block-styles, accessibility-ready
+Tags: custom-logo, custom-menu, featured-images, responsive-layout, block-styles, accessibility-ready, travel, hospitality
 */
 
 :root {
   --adis-bg: #ffffff;
-  --adis-surface: #f5f7fb;
+  --adis-surface: #fbf7f1;
   --adis-text: #172033;
   --adis-muted: #5b667a;
-  --adis-primary: #126b67;
-  --adis-primary-dark: #0d4f4c;
-  --adis-accent: #e2a13a;
-  --adis-border: #dbe2ec;
+  --adis-primary: #135c56;
+  --adis-primary-dark: #0e4742;
+  --adis-accent: #8f5e36;
+  --adis-border: #e7dfd4;
   --adis-shadow: 0 18px 45px rgba(23, 32, 51, 0.1);
   --adis-radius: 8px;
   --adis-container: 1180px;
@@ -229,6 +229,69 @@ select {
     var(--adis-surface);
 }
 
+.travel-fallback-hero {
+  padding: clamp(58px, 9vw, 118px) 0;
+  background:
+    linear-gradient(135deg, rgba(143, 94, 54, 0.16), rgba(19, 92, 86, 0.12)),
+    var(--adis-surface);
+}
+
+.travel-fallback-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: clamp(30px, 6vw, 72px);
+  align-items: center;
+}
+
+.travel-eyebrow {
+  margin: 0 0 10px;
+  color: var(--adis-accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.travel-fallback-hero h1 {
+  max-width: 820px;
+  margin: 0 0 18px;
+  font-size: clamp(2.4rem, 7vw, 5.2rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.travel-fallback-hero p {
+  max-width: 680px;
+  color: var(--adis-muted);
+  font-size: 1.1rem;
+}
+
+.travel-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.travel-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  padding: clamp(42px, 6vw, 78px) 0;
+}
+
+.travel-card {
+  padding: 22px;
+  border: 1px solid var(--adis-border);
+  border-radius: var(--adis-radius);
+  background: #fff;
+  box-shadow: var(--adis-shadow);
+}
+
+.travel-card h2 {
+  margin-top: 0;
+  line-height: 1.15;
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
@@ -423,6 +486,15 @@ input[type="submit"]:focus {
 
   .hero-grid {
     grid-template-columns: 1fr;
+  }
+
+  .travel-fallback-grid,
+  .travel-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .travel-actions .button {
+    width: 100%;
   }
 
   .hero h1,

@@ -1,6 +1,6 @@
-# Adis Custom Theme
+# Adis Travel Theme
 
-A clean custom WordPress theme for a modern business website.
+A clean custom WordPress theme for a premium travel and hospitality website.
 
 ## Included files
 
@@ -9,6 +9,7 @@ A clean custom WordPress theme for a modern business website.
 - `index.php`
 - `header.php`
 - `footer.php`
+- `front-page.php`
 - `page.php`
 - `assets/js/navigation.js`
 
@@ -19,6 +20,8 @@ A clean custom WordPress theme for a modern business website.
 3. Connect WP Pusher to GitHub.
 4. Add a new theme from the GitHub repository.
 5. Set the repository branch you want to deploy from.
-6. Install and activate `Adis Custom Theme`.
+6. Install and activate `Adis Travel Theme`.
+
+For the full travel site structure, also install and activate the `aliyukinfe/adis-custom-plugin` plugin.
 
 Do not place this theme inside WordPress core directories in source control. For local WordPress testing, copy or symlink the `adis-custom-theme` folder into `wp-content/themes/`.
